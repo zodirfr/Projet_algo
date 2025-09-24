@@ -1,0 +1,23 @@
+//PSEUDO-CODE
+
+le package est main
+
+importer "fmt" et "math/rand"
+
+fonction main() {
+	source := rand.NewSource(1)
+	r := rand.New(source)
+
+	var tableau [10]int
+	pour i qui est égale à 0; i doit être inferieur à 10; par pas de 1 
+		tableau[i] = r.Intn(5)
+	
+	
+	var occu [5]int
+	pour i qui est égale à 0; i doit être inferieur à 10; par pas de 1 
+		occu[tableau[i]] avec une itération de 1
+
+	
+	Afficher(tableau)
+	Afficher(occu)
+}

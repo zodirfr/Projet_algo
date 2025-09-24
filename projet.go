@@ -11,10 +11,10 @@ func main() {
 
 	var tableau [10]int
 	for i := 0; i < 10; i++ {
-		tableau[i] = r.Intn(5)
+		tableau[i] = r.Intn(6)
 	}
 
-	var occu [5]int
+	var occu [6]int
 	for i := 0; i < 10; i++ {
 		occu[tableau[i]]++
 	}
