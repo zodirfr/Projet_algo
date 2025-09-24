@@ -3,22 +3,23 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 func main() {
-	source := rand.NewSource(1)
-	r := rand.New(source)
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 
 	var tableau [10]int
-	for i := 0; i < 10; i++ {
-		tableau[i] = r.Intn(6)
+	for i := range tableau {
+		tableau[i] = r.Intn(5) // nombre entre 0 et 4
 	}
 
-	var occu [6]int
-	for i := 0; i < 10; i++ {
-		occu[tableau[i]]++
+	var occu [5]int
+	for _, v := range tableau {
+		occu[v]++
 	}
 
-	fmt.Println(tableau)
-	fmt.Println(occu)
+	fmt.Println("Tableau :", tableau)
+	fmt.Println("Occurrences :", occu)
 }
+
