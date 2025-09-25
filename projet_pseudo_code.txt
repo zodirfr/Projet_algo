@@ -11,8 +11,6 @@ fonction main() {
 	Pour i de 0 à 9 (pas de 1) :
     	tableau[i] ← nombre aléatoire entre 0 et 4
 
-	
-	
 	Créer un tableau occu de taille 5
 	Pour chaque élément v dans tableau :
     	occu[v] ← occu[v] + 1
