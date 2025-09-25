@@ -7,9 +7,10 @@ importer "fmt" et "math/rand"
 fonction main() {
 	r ← générateur_aléatoire(seed = temps_actuel)
 
-	var tableau [10]int
-	pour i qui est égale à 0; i doit être inferieur à 10; par pas de 1 
-		tableau[i] = r.Intn(5)
+	Créer un tableau tableau de taille 10
+	Pour i de 0 à 9 (pas de 1) :
+    	tableau[i] ← nombre aléatoire entre 0 et 4
+
 	
 	
 	Créer un tableau occu de taille 5
