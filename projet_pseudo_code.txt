@@ -12,9 +12,9 @@ fonction main() {
 		tableau[i] = r.Intn(5)
 	
 	
-	var occu [5]int
-	pour i qui est égale à 0; i doit être inferieur à 10; par pas de 1 
-		occu[tableau[i]] avec une itération de 1
+	Créer un tableau occu de taille 5
+	Pour chaque élément v dans tableau :
+    	occu[v] ← occu[v] + 1
 
 	
 	Afficher(tableau)
