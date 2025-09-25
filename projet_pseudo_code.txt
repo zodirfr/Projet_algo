@@ -5,8 +5,7 @@ le package est main
 importer "fmt" et "math/rand"
 
 fonction main() {
-	source := rand.NewSource(1)
-	r := rand.New(source)
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
 
 	var tableau [10]int
 	pour i qui est égale à 0; i doit être inferieur à 10; par pas de 1 
